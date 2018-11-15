@@ -1,4 +1,6 @@
 const chai = require('chai')
+const sinon = require('sinon');
+global.Should = require('chai').Should()
 global.expect = chai.expect
 const fs = require('file-system')
 const jsdom = require('mocha-jsdom')
