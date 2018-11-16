@@ -8,8 +8,8 @@ describe("index.js", () => {
     expect(document.addEventListener.calledOnce).to.be.true
   })
   it('should change the text on the page', function(){
-    expect(document.querySelector('p')).should.have.text("JavaScript is so cool. It lets me add text to my page programmatically.");
+    expect(document.querySelector('p').textContent).to.equal("JavaScript is so cool. It lets me add text to my page programmatically.");
     domContentLoaded()
-    expect(document.querySelector('p')).should.have.text("This is really cool!");
+    expect(document.querySelector('p').textContent).to.equal("This is really cool!");
   });
 })
